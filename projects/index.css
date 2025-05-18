@@ -1,0 +1,33 @@
+body {
+    margin: auto;
+    max-width: 1000px;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+section {
+    margin: 1em -0.5em;
+    background: var(--background-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section img {
+    width: 300px;
+    /* max-width: 50%; */
+    flex-grow: 1;
+}
+
+section .description {
+    width: 500px;
+    padding: 1em;
+    max-width: 50%;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+section h2 {
+    margin-bottom: 0.5em;
+}
