@@ -1,16 +1,16 @@
 :root {
-    --background-color: #f0f0f0;
+    --background-color: #ececec;
     --background-secondary-color: #ffffff;
-    --primary-color: #333;
-    --accent-color: #003BFF;
+    --primary-color: #000000;
+    --accent-color: #0000FF;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #171717;
-        --background-secondary-color: #000000;
-        --primary-color: #f0f0f0;
-        --accent-color: #3061ff;
+        --background-color: #000000;
+        --background-secondary-color: #353535;
+        --primary-color: #ffffff;
+        --accent-color: #ffff00;
     }
 }
 
@@ -32,18 +32,30 @@ body {
     padding: 20px
 }
 
-h1 {
-    font-size: 2em;
+h1, h2, h3 {
+    font-weight: normal;
     text-transform: uppercase;
 }
 
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
 a {
-    color: var(--accent-color);
+    color: var(--primary-color);
     text-decoration: underline;
 }
 a:hover {
-    font-weight: bold;
-    color: var(--primary-color)
+    color: var(--accent-color);
+    text-shadow: 0px 0px 20px var(--accent-color);
 }
 
 img {
@@ -52,9 +64,13 @@ img {
 
 a.home-nav {
     text-decoration: none;
-    padding: 0.4em 1em;
+    padding: 0.4em 4em;
     border-radius: 50px;
-    color: var(--background-color);
-    background-color: var(--accent-color);
+    border: 1px solid var(--primary-color);
     display: inline-block;
+}
+
+a.home-nav:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color)
 }

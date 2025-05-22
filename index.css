@@ -13,11 +13,21 @@ main {
     gap: 1em;
 }
 
+h1 {
+    font-size: 2em;
+}
+
 a.main-link {
     font-size: 2em;
     display: block;
 }
 
+p {
+    font-size: 2em;
+    opacity: 0.5;
+    text-transform: uppercase;
+    line-height: 1;
+}
 
 .contact-container {
     position: fixed;
