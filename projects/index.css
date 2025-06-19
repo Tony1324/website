@@ -8,6 +8,7 @@ section {
     background-color: var(--background-secondary-color);
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 section img {
@@ -15,8 +16,8 @@ section img {
     min-height: 200px;
     flex-grow: 1;
     flex-shrink: 1;
-    border-right: 2px solid var(--primary-color);
     object-fit: cover;
+    box-shadow: 0px 0px 0px 2px var(--primary-color);
 }
 
 section .description {
