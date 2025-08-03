@@ -2,7 +2,7 @@
     --background-color: #ececec;
     --background-secondary-color: #ffffff;
     --primary-color: #000000;
-    --accent-color: #0000FF;
+    --accent-color: #0000ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,24 +21,32 @@
     font-family: helvetica, sans-serif;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
     background-color: var(--background-color);
     color: var(--primary-color);
     font-size: 18px;
 }
 
 body {
-    padding: 20px
+    padding: 1em;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: normal;
     text-transform: uppercase;
+    text-box: trim-both cap alphabetic;
+    margin: 0rem -0.085em;/
 }
 
 h1 {
     font-size: 5em;
+    margin-bottom: 1rem;
 }
 
 h2 {
@@ -47,6 +55,18 @@ h2 {
 
 h3 {
     font-size: 2em;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
 }
 
 a {
@@ -68,9 +88,10 @@ a.home-nav {
     border-radius: 50px;
     border: 1px solid var(--primary-color);
     display: inline-block;
+    margin: 0 0 1em -0.2em;
 }
 
 a.home-nav:hover {
     background-color: var(--accent-color);
-    color: var(--background-color)
+    color: var(--background-color);
 }
