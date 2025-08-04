@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
+
 :root {
     --background-color: #ececec;
     --background-secondary-color: #ffffff;
@@ -17,8 +19,9 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    font-family: helvetica, sans-serif;
+    text-box: trim-both cap alphabetic;
+    line-height: 1.22em;
+    font-family: "baskervville", serif;
 }
 
 html,
@@ -29,6 +32,7 @@ body {
     background-color: var(--background-color);
     color: var(--primary-color);
     font-size: 18px;
+    margin: 0px;
 }
 
 body {
@@ -38,15 +42,13 @@ body {
 h1,
 h2,
 h3 {
-    font-weight: normal;
     text-transform: uppercase;
-    text-box: trim-both cap alphabetic;
-    margin: 0rem -0.085em;/
+    /*font-weight: normal;*/
 }
 
 h1 {
     font-size: 5em;
-    /*margin-bottom: 1rem;*/
+    margin-bottom: 1em;
 }
 
 h2 {
@@ -72,7 +74,9 @@ h3 {
 a {
     color: var(--primary-color);
     text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
+
 a:hover {
     color: var(--accent-color);
     text-shadow: 0px 0px 20px var(--accent-color);
@@ -84,11 +88,11 @@ img {
 
 a.home-nav {
     text-decoration: none;
-    padding: 0.4em 4em;
-    border-radius: 50px;
-    border: 1px solid var(--primary-color);
+    padding: 0.5em 2em;
+    border-radius: 50%;
+    background-color: var(--background-secondary-color);
     display: inline-block;
-    margin: 0 0 1em -0.2em;
+    margin: 0 0 1em -0.1em;
 }
 
 a.home-nav:hover {

@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
-
 body {
     display: flex;
     justify-content: center;
@@ -15,79 +13,23 @@ main {
 
 h1,
 p,
-a{
-    font-size: 2em;
-    font-weight: normal;
-    text-transform: uppercase;
-    text-box: trim-both cap alphabetic;
-    margin: 0rem -0.085em;/
-}
-
 a.main-link {
-    /*display: block;*/
+    font-size: 2em;
 }
 
 p {
     opacity: 0.5;
     text-transform: uppercase;
-    line-height: 1;
+    font-style: italic;
+    margin-bottom: 1em;
 }
 
-.contact-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.8s ease-out;
+#contact-link::after {
+    content: "@tonyzhang.net";
+    opacity: 0;
+    transition: opacity 0.2s;
 }
 
-.contact-container.contact-closed {
-    pointer-events: none;
-    background-color: transparent;
-}
-
-.contact-container.contact-closed .contact-info {
-    transform: translateY(100vh) rotate(-50deg);
-}
-
-.contact-info {
-    position: relative;
-    background-color: antiquewhite;
-    background-image: url("texture.webp");
-    background-size: 100% 100%;
-    box-shadow:
-        0px 3px 5px rgba(187, 151, 94, 0.328),
-        0px 8px 15px rgba(112, 83, 41, 0.228),
-        0px 15px 20px rgba(0, 0, 0, 0.19);
-    border-top: 1px solid rgba(255, 255, 255, 0.755);
-    border-left: 1px solid rgba(255, 255, 255, 0.755);
-    outline: 1px solid rgba(0, 0, 0, 0.111);
-    box-sizing: content-box;
-    padding: 1em;
-    width: 500px;
-    height: 300px;
-    pointer-events: auto;
-    transform: rotate(-3deg);
-    transition: all 2s cubic-bezier(0.1, 1.5, 0.3, 0.96);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-info * {
-    font-family: "Baskervville", serif;
-    color: rgb(60, 60, 60) !important;
-}
-
-.contact-info h3 {
-    font-size: 1.5em;
-}
-
-.contact-info a {
-    color: var(--primary-color);
+#contact-link:hover::after {
+    opacity: 0.3;
 }
