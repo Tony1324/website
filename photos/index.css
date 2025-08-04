@@ -1,5 +1,8 @@
 p {
-    margin-bottom: 1em;
     text-transform: uppercase;
     opacity: 0.8;
+}
+
+img {
+    margin-top: 1em;
 }
