@@ -12,10 +12,14 @@ main {
     gap: 1em;
 }
 
-h1,
 p,
 a.main-link {
     font-size: 2em;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 2rem;
 }
 
 p {
